@@ -37,7 +37,6 @@ namespace Demo_MVVMBasic
             }
         }
 
-
         public MainWindowViewModel()
         {
             Widgets = new ObservableCollection<Widget>(WidgetData.GetAllWidgets());
