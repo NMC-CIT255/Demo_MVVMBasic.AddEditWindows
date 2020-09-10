@@ -17,7 +17,6 @@ namespace Demo_MVVMBasic
     {
         public ICommand ButtonSaveCommand { get; set; }
         public ICommand ButtonCancelCommand { get; set; }
-
         public Widget UserWidget { get; set; }
 
         private WidgetOperation _widgetOperation;
@@ -33,7 +32,9 @@ namespace Demo_MVVMBasic
 
         public void AddWidget(object parameter)
         {
-            // validate user inputs
+            //
+            // TODO - validate user inputs
+            //
             _widgetOperation.Status = WidgetOperation.OperationStatus.OKAY;
 
             if (parameter is System.Windows.Window)

@@ -8,6 +8,7 @@
         Title="Demo MVVM Basic" 
         Height="350" 
         Width="370">
+
     <Window.Resources>
         <Style x:Key="BorderStyle" TargetType="Border">
             <Setter Property="Margin" Value="5"/>
@@ -94,9 +95,6 @@
                 Content="Acme Widgets"
                 HorizontalAlignment="Center"
                 Style="{StaticResource HeaderStyle }"/>
-            <!--
-                Widget Management Section                
-             -->
             <Border 
                 Style="{StaticResource BorderStyle}">
                 <StackPanel
@@ -164,7 +162,6 @@
                     Command="{Binding ButtonCancelCommand}"
                     CommandParameter="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"/>
             </StackPanel>
-
         </StackPanel>
     </Grid>
 </Window>

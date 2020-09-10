@@ -23,7 +23,5 @@ namespace Demo_MVVMBasic.Models
                 OnPropertyChanged(nameof(CurrentInventory));
             }
         }
-
-
     }
 }

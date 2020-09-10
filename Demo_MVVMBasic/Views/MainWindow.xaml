@@ -5,6 +5,7 @@
         Title="Demo MVVM Basic" 
         Height="500" 
         Width="370">
+    
     <Window.Resources>
         <Style x:Key="BorderStyle" TargetType="Border">
             <Setter Property="Margin" Value="5"/>
@@ -185,6 +186,7 @@
                     </Grid>
                 </StackPanel>
             </Border>
+            
             <!--
                 Widget Transaction Section                
              -->

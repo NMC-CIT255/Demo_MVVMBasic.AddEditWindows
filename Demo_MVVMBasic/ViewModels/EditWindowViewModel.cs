@@ -32,7 +32,9 @@ namespace Demo_MVVMBasic
 
         public void EditWidget(object parameter)
         {
-            // validate user inputs
+            //
+            // TODO - validate user inputs
+            //
             _widgetOperation.Status = WidgetOperation.OperationStatus.OKAY;
 
             if (parameter is System.Windows.Window)

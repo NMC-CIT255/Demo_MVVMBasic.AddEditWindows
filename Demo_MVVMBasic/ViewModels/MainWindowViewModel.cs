@@ -77,9 +77,6 @@ namespace Demo_MVVMBasic
             Window addWdigetWindow = new AddWindow(widgetOperation);
             addWdigetWindow.ShowDialog();
 
-            //
-            // TODO consider refactoring and use a class with the Widget object and status
-            //
             if (widgetOperation.Status != WidgetOperation.OperationStatus.CANCEL)
             {
                 Widgets.Add(widgetOperation.Widget);
@@ -100,9 +97,6 @@ namespace Demo_MVVMBasic
             Window editWidgetWindow = new EditWindow(widgetOperation);
             editWidgetWindow.ShowDialog();
 
-            //
-            // TODO consider refactoring and use a class with the Widget object and status
-            //
             if (widgetOperation.Status != WidgetOperation.OperationStatus.CANCEL)
             {
                 Widgets.Remove(SelectedWidget);
